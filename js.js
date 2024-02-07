@@ -10,8 +10,13 @@ function dropFunctionOne() {
     document.getElementById("dropdown").classList.toggle("show");
 }
 
-function darkmodeFunction (){
+function darkmodeFunction() {
     document.getElementById("body").classList.toggle("darkmode");
+}
+
+function CO2BubbleFunction() {
+    document.getElementById("CO2-secondP").classList.toggle("show");
+    document.getElementById("CO2-firstP").classList.toggle("show");
 }
 
 window.onclick = function(event) {
@@ -26,3 +31,4 @@ window.onclick = function(event) {
       }
     }
 }
+
