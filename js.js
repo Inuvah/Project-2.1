@@ -9,6 +9,11 @@ fontSizeSlider.addEventListener("input", () => {
 function dropFunctionOne() {
     document.getElementById("dropdown").classList.toggle("show");
 }
+
+function darkmodeFunction (){
+    document.getElementById("body").classList.toggle("darkmode");
+}
+
 window.onclick = function(event) {
     if (!event.target.matches('.input-button')) {
       var dropdowns = document.getElementsByClassName("dropdown-one");
