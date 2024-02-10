@@ -8,11 +8,6 @@ body {
     justify-content: center;
     align-items: center;}
 
-.display-text {
-    font-family: Sometype Mono;
-    text-align: center;
-    padding-top: 2rem;}
-
 h1{
     margin-bottom: -25px;
     color: blue;}
@@ -102,4 +97,8 @@ header nav {
     text-decoration: none;
     list-style-type: none;}
 
+    .display-text {
+        font-family: Sometype Mono;
+        text-align: center;
+        padding-top: 2rem;}
 .show {display: flex;}
