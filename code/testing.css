@@ -52,10 +52,15 @@
     box-shadow: none;
   }
   .CO2 {
+    position: absolute;
+    height: 15em;
+    top: 30%;
+    right: 10%;
     transition: 1s;
+    border-radius: 100%;
   }
   .CO2:focus, p:focus {
-    transform: scale(4) translateX(-50%);
+    transform: scale(3) translateX(-50%);
     border-radius: 0;
     
   } 
