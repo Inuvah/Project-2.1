@@ -51,4 +51,20 @@
     background-color: var(--dark);
     box-shadow: none;
   }
+  .CO2 {
+    transition: 1s;
+  }
+  .CO2:focus, p:focus {
+    transform: scale(4) translateX(-50%);
+    border-radius: 0;
+    
+  } 
+
+  #CO2-first {
+    display: block;
+  }
+
+  #CO2-secondP {
+    display: none;
+  }
   .darkmode{background-color: gray;}

@@ -10,12 +10,7 @@ body {
     align-items: center;
 }
 
-a:hover{
-    background-color: blue;
-    text-decoration: underline;
-}
-
-h1 {
+h1{
     margin-bottom: -25px;
     color: blue;
 }
@@ -288,12 +283,8 @@ a {
     list-style-type: none;
 }
 
-.display-text {
-    font-family: monospace;
-    text-align: center;
-    padding-top: 2rem;
-}
-
-.show {
-    display: flex;
-}
+    .display-text {
+        font-family: Sometype Mono;
+        text-align: center;
+        padding-top: 2rem;}
+.show {display: flex;}
