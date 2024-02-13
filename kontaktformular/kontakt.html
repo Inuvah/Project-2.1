@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="kontakt">
+
+        <!--Kontaktform - hovedindhold-->
+        <div id="formboks">
+            <div class="kontaktform">
+                <div class="kontakt-overskrift">
+                    Har du forslag til ændringer?
+                </div>
+
+                <div class="kontakt-tekst">Skriv til os via kontaktformularen og så vender vi tilbage til dig</div>
+
+                <!--Kontaktformular-->
+                <div class="brugerinput">
+                    <form>
+                        <input id="navn-input" type="text" placeholder="Navn">
+                        <input id="mail-input" type="email" placeholder="E-mail">
+                        <input id="adresse-input" type="text" placeholder="Adresse">
+                        <input id="nummer-input" type="nummer" placeholder="Nummer">
+                </div>
+
+                <!--Droopdown valgmuligheder-->
+                <label for="dropdown"></label>
+                <select id="dropdown" name="select">
+
+                    <div id="dit-handicap">
+                        <option value="0" selected="0" disabled>Dit handicap?</option>
+                    </div>
+
+                    <option value="1">Visuelt</option>
+                    <option value="2">Motorisk</option>
+                    <option value="3">Mentalt</option>
+                    <option value="4">Blanding (specificer i beskedfeltet)</option>
+                    <option value="5">Andet (specificer i beskedfeltet)</option>
+                </select>
+
+                <fieldset class="checkbox">
+                    <legend class="ændringer">Hvilke ændringer vil du foreslå?</legend>
+                    <div>
+                        <input id="designet" type="checkbox">
+                        <label for="designet">Designet</label>
+                    </div>
+
+                    <div>
+                        <input id="teknisk" type="checkbox">
+                        <label for="teknisk">Teknisk</label>
+                    </div>
+
+                    <div>
+                        <input id="andet" type="checkbox">
+                        <label for="andet">Andet</label>
+                    </div>
+                </fieldset>
+
+                <!--Droopdown valgmuligheder-->
+                <div class="brugerinput">
+                    <label for="besked">
+                        <div class="besked">
+                            Skriv din besked herunder:
+                    </label>
+                </div>
+                <textarea id="besked" cols="30" rows="10">
+            </textarea>
+            </div>
+
+            <fieldset class="checkbox2">
+                <legend class="telefon">Må vi kontakte dig på telefon?
+                </legend>
+                <input id="ja" type="radio" name="kontaktes" value="ja">
+                <label for="ja">Ja</label>
+
+                <input id="nej" type="radio" name="kontaktes" value="nej">
+                <label for="nej">Nej</label>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Send">
+
+        </div>
+    </section>
+
+</body>
+
+</html>
