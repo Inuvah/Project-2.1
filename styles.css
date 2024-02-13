@@ -69,6 +69,7 @@ header nav {
 }
 .håndtekst1 {
     grid-area: 1 / 2;
+    font-size: 1em;
 }
 .håndtekst2 {
     grid-area: 3 / 2;
@@ -133,6 +134,7 @@ header nav {
     flex-direction: column;
     background-color: purple;
     align-items: center;
+    height: 300px;
 }
 
 .dropdown-one li,
@@ -142,8 +144,85 @@ a {
     list-style-type: none;
 }
 
-    .display-text {
-        font-family: Sometype Mono;
-        text-align: center;
-        padding-top: 2rem;}
-.show {display: flex;}
+.display-text {
+    font-family: Sometype Mono;
+    text-align: center;
+    padding-top: 2rem;}
+
+
+:root {
+    --light: #d8dbe0;
+    --dark: #28292c;
+    }
+    .toggle-switch {
+    position: relative;
+    width: 100px;
+    }
+    
+    .toggle-switch label {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 50px;
+    cursor: pointer;
+    }
+    
+    #darkmode {
+    position: absolute;
+    display: none;
+    }
+    
+    .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: 0.3s;
+    }
+    
+    input:checked ~ .slider {
+    background-color: var(--light);
+    }
+    
+    .slider::before {
+    content: "";
+    position: absolute;
+    top: 7.5px;
+    left: 7.5px;
+    width: 32.5px;
+    height: 32.5px;
+    border-radius: 50%;
+    box-shadow: inset 12px -3px 0px 0px var(--light);
+    background-color: var(--dark);
+    transition: 0.3s;
+    }
+    
+    input:checked ~ .slider::before {
+    transform: translateX(47.5px);
+    background-color: var(--dark);
+    box-shadow: none;
+    }
+    .CO2 {
+    position: absolute;
+    height: 15em;
+    top: 30%;
+    right: 10%;
+    transition: 1s;
+    border-radius: 100%;
+    }
+    .CO2:focus, p:focus {
+    transform: scale(3) translateX(-50%);
+    border-radius: 0;
+    } 
+
+    #CO2-first {
+    display: block;
+    }
+
+    #CO2-secondP {
+    display: none;
+    }
+                    /*I WANNA BE LAST*/
+                    .show {display: flex;}
+                    .darkmode{background-color: black;}

@@ -11,7 +11,7 @@
     <title>SOP Man</title>
 </head>
 
-<body>
+<body id="body">
     <header>
         <nav>
             <div class="logo">
@@ -43,12 +43,21 @@
                             <input type="range" id="font-size-slider" min="20" max="40" value="20" />
                         </div>
                     </li>
+                    <li>
+                        <div class = 'toggle-switch'>
+                            <label>
+                                <input type = 'checkbox' onclick="darkmodeFunction();" id="darkmode">
+                                <span class = 'slider'></span>
+                            </label>
+                            </a>
+                        </div>
+                    </li>
                 </div>
             </div>
 
         </nav>
     </header>
-
+<div id="display-text">
     <!-- Forsiden -->
     <section class="forside">
 
@@ -69,14 +78,14 @@
         <div class="hånd1">
             <img src="img/hånd1.png" alt="Hånd som kommer ud">
         </div>
-        <div class="håndtekst1" id="display-text">
+        <div class="håndtekst1">
             <h3>HVOR MEGET SVINER HJEMMESIDER?</h3>
         </div>
 
         <div class="hånd2">
             <img src="img/hånd2.png" alt="Hånd som kommer ud">
         </div>
-        <div class="håndtekst2" id="display-text">
+        <div class="håndtekst2">
             <h3>HVILKE ÆNDRINGER SKER?</h3>
         </div>
 
@@ -85,9 +94,8 @@
     <section class="info-graphic">
         <img src="img/Computer Slider.png" alt="computer-slide" id="computer-slider">
     </section>
-    <p style="text-align: center;">asd</p>
-
+</div>
+    <script src="js.js"></script>
 </body>
-<script src="js.js"></script>
 
 </html>
