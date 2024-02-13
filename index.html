@@ -1,68 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="bobbel" href="bobbel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <title>SOP Man</title>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="logo">
                 <img src="img/Logo.png" alt="SOPAMAN Logo">
             </div>
+
             <div class="navigation">
                 <a href="#">
                     Bæredygtig Guide
+
                 </a><a href="#">
                     Udledning
+
                 </a><a href="#">
                     Reviews
+
                 </a><a href="#">
                     Kontakt
                 </a>
             </div>
+
             <div class="access">
-                <input type="button" value="Webtilgængelighed" id="dropdownButton" class="input-button" onclick="dropFunctionOne();">
+                <input type="button" value="Webtilgængelighed" id="dropdownButton" class="input-button"
+                    onclick="dropFunctionOne();">
                 <div class="dropdown-one dropdown-link" id="dropdown">
-                    <li> <div class="slider-container">
-                        <label for="font-size-slider">Adjust font Size</label>
-                        <input type="range" id="font-size-slider" min="20" max="40" value="20" />
-                      </div></li>
-                    
-                  </div>
-                
+                    <li>
+                        <div class="slider-container">
+                            <label for="font-size-slider">Adjust font Size</label>
+                            <input type="range" id="font-size-slider" min="20" max="40" value="20" />
+                        </div>
+                    </li>
+                </div>
             </div>
+
         </nav>
     </header>
 
-    <div class="display-text" id="display-text">
-        <h1>VELKOMMEN TIL SOPAMAN!</h1>
-        <h2>BÆREDYGTIGT WEBDESIGN</h2>
-    </div>
+    <!-- Forsiden -->
+    <section class="forside">
 
-    <div class="computer">
-    <img src="img/Computer.png" alt="Computer">
-    </div>
+        <div class="display-text" id="display-text">
+            <h1>VELKOMMEN TIL SOPAMAN!</h1>
+            <h2>BÆREDYGTIGT WEBDESIGN</h2>
+        </div>
 
-    <button class="CO2">
-        <p>Dette website udleder 0,49g CO2</p>
-    </button>
+        <div class="computer">
+            <img src="img/Computer.png" alt="Computer">
+        </div>
 
-<!-- Sektion under forsiden -->
-    <section class="Fyldforside">
-    
+    </section>
 
+    <!-- Sektion under forsiden -->
+    <section class="fyldforside">
 
+        <div class="hånd1">
+            <img src="img/hånd1.png" alt="Hånd som kommer ud">
 
+            <div class="håndtekst" id="display-text">
+                <h3>HVOR MEGET SVINER HJEMMESIDER?</h3>
+            </div>
+        </div>
+
+        <div class="hånd2">
+            <img src="img/hånd2.png" alt="Hånd som kommer ud">
+
+            <div class="håndtekst" id="display-text">
+                <h3>HVILKE ÆNDRINGER SKER?</h3>
+            </div>
+        </div>
 
     </section>
 
 
 </body>
 <script src="js.js"></script>
+
 </html>
