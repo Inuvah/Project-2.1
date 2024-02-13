@@ -4,41 +4,22 @@
     padding: 0;
 }
 
-.slider-container {
-    display: flex;
-    padding-top: 3rem;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
+
+/*-----------------------------*/
+
+
+/*RESPONSIVE*/
+@media screen and (min-width: 80rem) {
+    .container {
+        margin: 1em 2em;
+    }
 }
 
-a:hover {
-    background-color: blue;
-    text-decoration: underline;
-}
 
-.brødtekst {
-    text-align: center;
-}
+/*-----------------------------*/
 
-header nav {
-    display: flex;
-    background-color: black;
-    height: 80px;
-    width: 100%;
-}
 
-.logo {
-    width: 25%;
-    display: inline-flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 100%;
-    margin-left: 5%;
-}
-
+/*HEADER*/
 .navigation {
     width: 100%;
     display: inline-flex;
@@ -54,6 +35,112 @@ header nav {
     font-size: larger;
 }
 
+.slider-container {
+    display: flex;
+    padding-top: 3rem;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a:hover {
+    background-color: blue;
+    text-decoration: underline;
+}
+
+header nav {
+    display: flex;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+
+.access {
+    background-color: purple;
+    width: 30%;
+}
+
+.access input {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: purple;
+    border: none;
+    font-size: larger;
+    color: white;
+    font-family: monospace;
+}
+
+.dropdown-one {
+    display: none;
+    flex-direction: column;
+    background-color: purple;
+    align-items: center;
+}
+
+.dropdown-one li,
+a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/*-----------------------------*/
+
+
+/*LOGO*/
+.logo {
+    width: 25%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    margin-left: 5%;
+}
+
+
+/*-----------------------------*/
+
+
+/*SKRIVEMASKINE*/
+#skrivemaskine {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+#tekst1 {
+    color: black;
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: bolder;
+    white-space: nowrap;
+    animation: typing 3s steps(45);
+    overflow: hidden;
+}
+
+#tekst1 span {
+    color: blue;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+
+/*-----------------------------*/
+
+
+/*KASSER MED LINKS*/
 .bobler-kasse {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -73,48 +160,10 @@ header nav {
     grid-area: 1 / 2 / 2 / 5;
 }
 
-.hånd {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
-.ikon {
-    grid-area: 1 / 4 / 2 / 5;
-}
-
-.brand {
-    grid-area: 1 / 5 / 2 / 6;
-}
-
 .computer-tekst {
     padding: 5px;
     font-size: 16px;
     grid-area: 2 / 2 / 3 / 3;
-    font-weight: bolder;
-    justify-content: center;
-    text-align: center;
-}
-
-.hånd-tekst {
-    padding: 5px;
-    font-size: 16px;
-    grid-area: 2 / 3 / 3 / 4;
-    font-weight: bolder;
-    justify-content: center;
-    text-align: center;
-}
-
-.ikon-tekst {
-    padding: 5px;
-    font-size: 16px;
-    grid-area: 2 / 4 / 3 / 5;
-    font-weight: bolder;
-    justify-content: center;
-    text-align: center;}
-
-.brand-tekst {
-    padding: 5px;
-    font-size: 16px;
-    grid-area: 2 / 5 / 3 / 6;
     font-weight: bolder;
     justify-content: center;
     text-align: center;
@@ -155,6 +204,19 @@ header nav {
     box-shadow: none;
 }
 
+.hånd {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.hånd-tekst {
+    padding: 5px;
+    font-size: 16px;
+    grid-area: 2 / 3 / 3 / 4;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+}
+
 .hånd-knap {
     grid-area: 3 / 3 / 4 / 4;
     --bouncing-offset: 0.35em;
@@ -188,6 +250,19 @@ header nav {
 .hånd-knap:focus-visible {
     transform: translateY(var(--bouncing-offset));
     box-shadow: none;
+}
+
+.ikon {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+.ikon-tekst {
+    padding: 5px;
+    font-size: 16px;
+    grid-area: 2 / 4 / 3 / 5;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
 }
 
 .ikon-knap {
@@ -225,6 +300,19 @@ header nav {
     box-shadow: none;
 }
 
+.brand {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+.brand-tekst {
+    padding: 5px;
+    font-size: 16px;
+    grid-area: 2 / 5 / 3 / 6;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+}
+
 .brand-knap {
     grid-area: 3 / 5 / 4 / 6;
     --bouncing-offset: 0.35em;
@@ -260,46 +348,31 @@ header nav {
     box-shadow: none;
 }
 
-.access {
-    background-color: purple;
+
+/*-----------------------------*/
+
+
+/*WEBACCESIBILITY*/
+.display-text {
+    font-family: monospace;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.show {
+    display: flex;
+}
+
+
+/*-----------------------------*/
+
+
+/*TIPS*/
+#tips {}
+
+.tip1 img {
     width: 30%;
 }
 
-.access input {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    background-color: purple;
-    border: none;
-    font-size: larger;
-    color: white;
-    font-family: monospace;
-}
 
-.dropdown-one {
-    display: none;
-    flex-direction: column;
-    background-color: purple;
-    align-items: center;
-}
-
-.dropdown-one li,
-a {
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-    .display-text {
-        font-family: Sometype Mono;
-        text-align: center;
-        padding-top: 2rem;}
-        
-.show {display: flex;}
-
-
-@media screen and (min-width: 80rem) {
-    .container {
-      margin: 1em 2em;
-    }
-  }
+/*-----------------------------*/
