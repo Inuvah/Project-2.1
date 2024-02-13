@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+#kontakt {
+    background: white
+}
+
+.brugerinput {
+    display: block;
+    margin-inline-end: 1.8em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+}
+
+.kontakt-overskrift {
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+}
+
+.kontakt-tekst {
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: white;
+}
+
+.ændringer {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.besked {
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 20px;
+    color: white}
+
+.telefon {
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.dit-handicap {
+    font-weight: bold;
+}
+
+.checkbox {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.checkbox2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.kontaktform {
+    border-radius: 5px;
+    border: 5px solid white;
+    background-color: black;
+    padding: 1.3em;
+    width: 83%;
+    margin: 0 auto;}
+
+    /*Centrerer elementet på siden*/
+
+
+input[type=text],
+input[type=email],
+input[type=nummer],
+select,
+textarea {
+    width: 100%;
+    font-size: 15px;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+input[type=checkbox] {
+    margin: 1.5em 0;
+    cursor: pointer;
+}
+
+input[type=radio] {
+    cursor: pointer;
+}
+
+fieldset {
+    margin-top: 20px;
+    border-style: dotted;
+    border-color: white;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    background-color: purple;
+    color: white;
+    padding: 0.8em 1.5;
+    border: none;
+    border-radius: 4px;
+    height: 70px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: blue;
+}
