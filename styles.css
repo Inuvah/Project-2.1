@@ -76,7 +76,10 @@ header nav {
 }
 .hånd2 {
     grid-area: 2 / 3;
-    justify-items: end;
+
+}
+.hånd2 img {
+    margin-left: 40%;
 }
 .fyldforside img {
     width: 60%;
@@ -223,6 +226,22 @@ a {
     #CO2-secondP {
     display: none;
     }
+
+    #star-container {
+        position: absolute;
+        width: 100%;
+        
+        animation: blink 6s infinite;
+      }
+    
+      @keyframes blink {
+        0%  {opacity: 100%;}
+        25% {opacity: 50%;}
+        50% {opacity: 0%;}
+        75% {opacity: 50%;}
+        100%{opacity: 100%;}
+      }
+    
                     /*I WANNA BE LAST*/
                     .show {display: flex;}
                     .darkmode{background-color: black;}
