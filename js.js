@@ -12,6 +12,7 @@ function dropFunctionOne() {
 
 function darkmodeFunction() {
     document.getElementById("body").classList.toggle("darkmode");
+    document.getElementById("star-container").classList.toggle("show");
 }
 
 function CO2BubbleFunction() {
