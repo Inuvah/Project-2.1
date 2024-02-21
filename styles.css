@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     z-index: -2;
+    transition: 1s;
 }
 
 .slider-container {
@@ -232,11 +233,16 @@ a {
         width: 32px;
         height: 32px;
     }
+    .starTwo {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+    }
     #star-container {
         position: absolute;
         width: 100%;
         height: 60%;
-        animation: blink 12s infinite;
+        animation: blink 8s infinite;
         z-index: -1;
       }
       @keyframes blink {
