@@ -255,4 +255,5 @@ a {
     
                     /*I WANNA BE LAST*/
                     .show {display: flex;}
+                    .hidden {display: none}
                     .darkmode{background-color: black;}
