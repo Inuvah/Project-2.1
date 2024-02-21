@@ -1,3 +1,4 @@
+/*-----------------------------*/
 * {
     font-family: monospace;
     margin: 0;
@@ -8,11 +9,15 @@
 /*-----------------------------*/
 
 
-/*RESPONSIVE*/
-@media screen and (min-width: 80rem) {
-    .container {
-        margin: 1em 2em;
-    }
+/*WEBACCESIBILITY*/
+.display-text {
+    font-family: monospace;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.show {
+    display: flex;
 }
 
 
@@ -109,7 +114,7 @@ a {
 #skrivemaskine {
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 50px;
 }
 
 #tekst1 {
@@ -141,6 +146,10 @@ a {
 
 
 /*KASSER MED LINKS*/
+#indhold {
+    height: 40em;
+}
+
 .bobler-kasse {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -352,27 +361,46 @@ a {
 /*-----------------------------*/
 
 
-/*WEBACCESIBILITY*/
-.display-text {
-    font-family: monospace;
-    text-align: center;
-    padding-top: 2rem;
-}
-
-.show {
-    display: flex;
+/*RESPONSIVE*/
+@media screen and (min-width: 80rem) {
+    .container {
+        margin: 1em 2em;
+    }
 }
 
 
 /*-----------------------------*/
 
+.tipskasse {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .tip1 { grid-area: 1 / 1 / 2 / 2; }
+    .tip1 img{ width: 50%; float: left; height: auto;}
+    .tipstekst { grid-area: 1 / 2 / 2 / 3; }
+    .tomkasse { grid-area: 1 / 3 / 2 / 4; }
 
-/*TIPS*/
-#tips {}
-
-.tip1 img {
-    width: 30%;
-}
 
 
-/*-----------------------------*/
+    .tomkasse { grid-area: 2 / 1 / 3 / 2; }
+    .tipstekst { grid-area: 2 / 2 / 3 / 3; }
+    .tip2 { grid-area: 2 / 3 / 3 / 4; }
+    .tip2 img{ width: 50%; float: right; height: auto;}
+
+
+
+    .tip3 { grid-area: 3 / 1 / 4 / 2; }
+    .tip3 img{width: 50%; height: auto;}
+    .tipstekst { grid-area: 3 / 2 / 4 / 3; }
+    .tomkasse { grid-area: 3 / 3 / 4 / 4; }
+
+
+
+    .tomkasse { grid-area: 4 / 1 / 5 / 2; }
+    .tipstekst { grid-area: 4 / 2 / 5 / 3; }
+    .tip4 { grid-area: 4 / 3 / 5 / 4; }
+    .tip4 img{width: 50%; float: left; height: auto;}
