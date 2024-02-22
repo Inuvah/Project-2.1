@@ -153,6 +153,7 @@ header nav {
     background-color: purple;
     align-items: center;
     height: 300px;
+    z-index: 99;
 }
 
 .dropdown-one li,
