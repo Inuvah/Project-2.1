@@ -1,5 +1,6 @@
 //Star amount dispersed at random
 var citylight = 80;
+var click = 0;
 var starcontainer = document.getElementById("star-container");
 
 const fontSizeSlider = document.getElementById("font-size-slider");
@@ -15,16 +16,29 @@ function dropFunctionOne() {
 }
 
 function darkmodeFunction() {
-    document.getElementById("body").classList.toggle("darkmode");
+  click++;
     document.getElementById("star-container").classList.toggle("show");
+    document.getElementById("body").classList.toggle("darkmode");
+    if(click == 1){
     for(var i = 0;i < citylight;i++){
       const star = document.createElement('img');
       star.setAttribute('class', 'star');
+      star.setAttribute('id', 'star');
       star.src = '\img/starfigma.png';
       star.style.top = Math.floor(Math.random(2)*2600) + "px";
       star.style.right = Math.floor(Math.random(2)*2600) + "px";
       starcontainer.appendChild(star);
+    } 
+    console.log(click);
+  }else if(click == 2){
+    for(var i = 0;i < citylight;i++){
+      const daytime = document.getElementById("star");
+       daytime.remove();
     }
+    click = 0;
+  }
+  
+  console.log(click);
 }
 
 function CO2BubbleFunction() {
@@ -45,3 +59,7 @@ window.onclick = function(event) {
     }
 }
 
+
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false);
