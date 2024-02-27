@@ -8,6 +8,8 @@
     <title>Document</title>
 </head>
 <body id="body">
+
+    <!-- Dark mode switch and info button
         <div class = 'toggle-switch'>
             <label>
                 <input type = 'checkbox' onclick="darkmodeFunction();" id="darkmode">
@@ -19,10 +21,53 @@
             <p id="CO2-firstP">Dette website udleder 0,49g CO2</p>
             <p id="CO2-secondP">CO2 IS VEWY VEWY BAD</p>
         </button>
+    -->
+        <div class="computer-container">
+            <div class="computer-wrapper" id="fullScreen">
+                <div class="computer-img">
+                    <img src="../img/Computer Slider.png" alt="">
+                    <video src="../video/video (1080p).mp4" type="video/mp4" autoplay>
+                    </video>
+                    <button onclick="fullScreen()">Fullscreen</button>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .computer-container {
+                width: 100%;
+            }
+            .computer-wrapper {
+                transition: 1s;
+                margin: 0 0 0 20%;
+            }
+
+            .computer-img img {
+                position: relative;
+                width: 70%;
+                z-index: 10;
+            }
+            .computer-img video {
+                position: absolute;
+                padding-top: 5em;
+                left: 0%;
+                margin: 0 25%;
+                z-index: 2;
+                width: 45%;
+            }
+            .computer-img button {
+                position: absolute;
+                left: 0%;
+                margin: 37% 0 0 59%;
+                z-index: 12;
+                width: 10%;
+            }
+
+            .fullScreenAnim {
+                transform: scale(2);
+            }
+        </style>
     <script src="../js.js"></script>
 
-    <div id="star-container">
-        <img src="../img/starfigma.png" alt="">
-    </div>
 </body>
 </html>

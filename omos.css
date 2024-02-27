@@ -64,9 +64,6 @@ p {
     max-height: 90%;
     float: right ;
     margin: 0 0 0 40%; 
-    animation: floatIn2 0.1s linear;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
 }
 .cloud1 {
     margin: 0 40% 0 0; 

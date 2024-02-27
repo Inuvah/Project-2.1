@@ -1,8 +1,9 @@
 //Star amount dispersed at random
-var citylight = 80;
+var citylight = 600;
 var click = 0;
 var starcontainer = document.getElementById("star-container");
 
+//Text size slider
 const fontSizeSlider = document.getElementById("font-size-slider");
 const displayText = document.getElementById("display-text");
 
@@ -11,12 +12,21 @@ fontSizeSlider.addEventListener("input", () => {
   displayText.style.fontSize = `${fontSize}px`;
 });
 
+//nav accesibility drop down
 function dropFunctionOne() {
     document.getElementById("dropdown").classList.toggle("show");
 }
 
+//Computer animation onClick
+function fullScreen(){
+  document.getElementById("fullScreen").classList.toggle("fullScreenAnim");
+
+}
+
+//Darkmode button && generate stars
 function darkmodeFunction() {
   click++;
+  console.log(click);
     document.getElementById("star-container").classList.toggle("show");
     document.getElementById("body").classList.toggle("darkmode");
     if(click == 1){
@@ -25,26 +35,36 @@ function darkmodeFunction() {
       star.setAttribute('class', 'star');
       star.setAttribute('id', 'star');
       star.src = '\img/starfigma.png';
-      star.style.top = Math.floor(Math.random(2)*2600) + "px";
-      star.style.right = Math.floor(Math.random(2)*2600) + "px";
+      star.style.top = Math.floor(Math.random(0)*2600) + "px";
+      star.style.right = Math.floor(Math.random(0)*2600) + "px";
       starcontainer.appendChild(star);
+
+      const starTwo = document.createElement('img');
+      starTwo.setAttribute('class', 'star');
+      starTwo.setAttribute('id', 'starTwo');
+      starTwo.src = '\img/starfigmaTwo.png';
+      starTwo.style.top = Math.floor(Math.random(2)*2900) + "px";
+      starTwo.style.right = Math.floor(Math.random(2)*2900) + "px";
+      starcontainer.appendChild(starTwo);
+      
     } 
-    console.log(click);
   }else if(click == 2){
     for(var i = 0;i < citylight;i++){
       const daytime = document.getElementById("star");
-       daytime.remove();
+      const daytimeTwo = document.getElementById("starTwo");
+      daytime.remove();
+      daytimeTwo.remove();
     }
     click = 0;
   }
-  
-  console.log(click);
 }
 
+//Info Grow
 function CO2BubbleFunction() {
     document.getElementById("CO2-secondP").classList.toggle("show");
     document.getElementById("CO2-firstP").classList.toggle("show");
 }
+
 
 window.onclick = function(event) {
     if (!event.target.matches('.input-button')) {
