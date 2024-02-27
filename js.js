@@ -35,8 +35,8 @@ function darkmodeFunction() {
       star.setAttribute('class', 'star');
       star.setAttribute('id', 'star');
       star.src = '\img/starfigma.png';
-      star.style.top = Math.floor(Math.random(2)*2600) + "px";
-      star.style.right = Math.floor(Math.random(2)*2600) + "px";
+      star.style.top = Math.floor(Math.random(0)*2600) + "px";
+      star.style.right = Math.floor(Math.random(0)*2600) + "px";
       starcontainer.appendChild(star);
 
       const starTwo = document.createElement('img');
