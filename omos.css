@@ -28,23 +28,27 @@ body {
 #headline {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    width: 80%;
     text-align: center;
     font-family: monospace;
     color: white;
     display: table;
-    margin: 0 auto;
+    margin: 0 10% 0 10%;
 }
 
-p {
+ul li, p {
+    padding: 0 2% 0 2%;
     color: black;
     font-weight: bolder;
-    width: 60%;
-    display: inline;
-    text-align: center;
+    height: 100%;
     font-size: x-large;
     line-height: 190%;
+    list-style-type: none;
+}
+
+ul li {
+    text-align: left;
+    width: 80%;
 }
 h1, h2, h3, h4, h5, h6 {
     padding-bottom: 3rem;
@@ -69,13 +73,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #cloud2 {
+    max-width: 100%;
+    max-height: 100%;
     animation: floatIn 0.4s linear;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
 }
 
 #cloud3 {
-    animation: floatIn2 1.2s linear;
+    animation: floatIn2 1s linear;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
 }
@@ -109,20 +115,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text1 {
-    text-align: left;
     font-family: monospace;
     font-weight: bolder;
-    width: 500px;
-    padding-left: 10px;
-   margin-left: 10px;
-   left: 10px;
-   
-
-   
-   
-  
-   
-
+    width: 100%;
+    float: right;
 }
 
 .head1 {
@@ -132,13 +128,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align:left;
     text-decoration: underline;
     padding-left: 10px;
-   margin-left: 10px;
-   left: 10px;
-   
-
+    margin-left: 10px;
+    left: 10px;
   }
 
 .head2 {
+    max-width: 100%;
     font-family: monospace;
     font-weight: bolder;
     color: white;
@@ -149,16 +144,21 @@ h1, h2, h3, h4, h5, h6 {
     right: 10px;
 
 }
+.textRight {
+    display: flex;
+    flex-direction: row;
+}
 
+.spacer {
+    display: block;
+    width: 50%;
+    height: 100px;
+}
 .text2 {
     font-family: monospace;
     font-weight: bolder;
-    width: 100%;
-    display: block;
     text-align: right;
-    padding-right: 10px;
-    margin-right: 10px;
-    right: 10px;
+    max-width: 100%;
 }
 
 .head3 {
@@ -168,15 +168,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align:left;
     text-decoration: underline;
     padding-left: 10px;
-    margin-left: 10px;
-    left: 10px;
+    margin:0 20% 0 10px;
 }
 
 .text3{
-    text-align: left;
     font-family: monospace;
     font-weight: bolder;
-    width: 700px;
+    width: 80%;
     padding-left: 10px;
     margin-left: 10px;
     left: 10px;
