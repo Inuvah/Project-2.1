@@ -20,8 +20,8 @@ function dropFunctionOne() {
 //Computer animation onClick
 function fullScreen(){
   document.getElementById("fullScreen").classList.toggle("fullScreenAnim");
-
 }
+
 
 //Darkmode button && generate stars
 function darkmodeFunction() {
@@ -29,6 +29,7 @@ function darkmodeFunction() {
   console.log(click);
     document.getElementById("star-container").classList.toggle("show");
     document.getElementById("body").classList.toggle("darkmode");
+    document.getElementById("display-text").classList.toggle("dark-text");
     if(click == 1){
     for(var i = 0;i < citylight;i++){
       const star = document.createElement('img');
@@ -65,6 +66,11 @@ function CO2BubbleFunction() {
     document.getElementById("CO2-firstP").classList.toggle("show");
 }
 
+//Burger Menu
+function burgerFunction(){
+  document.getElementById("burger-menu").classList.toggle("show");
+  console.log("I have been clicked");
+}
 
 window.onclick = function(event) {
     if (!event.target.matches('.input-button')) {

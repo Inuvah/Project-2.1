@@ -31,6 +31,33 @@ h3 {
     text-align: center;
 }
 
+#burger-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 6%;
+    margin-left: 30%;
+    cursor: pointer;
+}
+.line {
+    background-color: white;
+    height: 8%;
+    border-radius: 10px;
+}
+.empty {
+    height: 10%;
+}
+
+.burger-menu {
+    display: none;
+    background-color: purple;
+    flex-direction: column;
+    position: absolute;
+    top: 8.7%;
+    right: 0;
+    z-index: 850;
+}
+
 header nav {
     display: flex;
     background-color: black;
@@ -39,7 +66,9 @@ header nav {
 }
 
 .logo {
-    width: 25%;
+    max-width: 21%;
+    min-width: 15%;
+    margin: 1% 3% 0 1%;
     display: inline-flex;
     align-items: center;
 }
@@ -86,7 +115,7 @@ header nav {
     margin-left: 40%;
 }
 .fyldforside img {
-    width: 60%;
+    max-width: 60%;
 }
 .info-graphic {
     display: flex;
@@ -136,6 +165,7 @@ header nav {
 .access {
     background-color: purple;
     width: 30%;
+    z-index: 900;
 }
 
 .access input {
@@ -225,6 +255,7 @@ a {
     box-shadow: none;
     }
     .CO2 {
+    display: block;
     grid-area: 1 / 3;
     height: 14em;
     width: 14em;
@@ -244,6 +275,7 @@ a {
     #CO2-secondP {
     display: none;
     }
+
     .star {
         position: absolute;
         width: 32px;
@@ -255,12 +287,11 @@ a {
         height: 32px;
     }
     #star-container {
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 60%;
-        transform-origin: 50% 50%;
+        transform-origin: center;
         animation: blink 8s infinite;
-        animation: rotate 180s infinite;
         z-index: -1;
       }
 
@@ -275,8 +306,36 @@ a {
         75% {opacity: 50%;}
         100%{opacity: 100%;}
       }
+      #container {
+        height: 150px;
+        width: 150px;
+    }
+      /*Messing with 3d*/
+      @media only screen and(max-width: 900px){
+        #spline {
+            height: 350px;
+            width: 350px;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        .CO2 {
+            display: none;
+        }
+        #desktop-nav {
+            display: none;
+        }
+        label {
+            display: flex;
+        }
+    }
+    @media screen and (min-width: 900px) {
+        label {
+            display: none;
+        }
+    }
     
                     /*I WANNA BE LAST*/
                     .show {display: flex;}
                     .darkmode{background-color: black;}
-                    .textNight {color: white;}
+                    .dark-text{color: white;}
