@@ -5,6 +5,9 @@ body {
     z-index: -2;
     transition: 1s;
     overflow-x: hidden;}
+    p, h1, h2, h3, h4, h5, h6, a {
+        font-family: monospace;
+    }
 .slider-container {
     display: flex;
     padding-top: 3rem;
@@ -239,18 +242,18 @@ input:checked ~ .slider::before {
     padding-top: 1rem;
     display: grid;
     width: 100%;
-    grid-template:1fr / 1fr 1fr 1fr ;
+    grid-template:1fr / 1fr 1fr 1fr;
     text-align: center;
     height: 12rem;
     line-height: 50px;
     border-top: 5px solid purple;} 
 .foot-content li {
+    max-width: 50%;
+    margin: 0 auto;
     list-style: none;} 
 .foot-content a {
     transition: all 0.3s ease-in-out;
     background-color: purple;
-    width: 50px;
-    height: 50px;
     padding: 5px 35% 5px 35%;
     border-radius: 20px;} 
 .foot-content a:hover {

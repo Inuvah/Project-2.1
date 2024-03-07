@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/Bi med kappe.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="omos.css">
     <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>SOP Man</title>
+    <title>SOP Man - Om Os</title>
 </head>
 
 <header>
@@ -20,7 +21,7 @@
             </a>
         </div>
 
-        <div class="navigation">
+        <div class="navigation" id="desktop-nav">
             <a href="peter/guide/guide.html">
                 Bæredygtig Guide
 
@@ -37,7 +38,7 @@
 
         <div class="access">
             <input type="button" value="Webtilgængelighed" id="dropdownButton" class="input-button"
-                onclick="dropFunctionOne();">
+                onclick="dropFunctionOne()">
             <div class="dropdown-one dropdown-link" id="dropdown">
                 <li>
                     <div class="slider-container">
@@ -48,7 +49,7 @@
                 <li>
                     <div class = 'toggle-switch'>
                         <label>
-                            <input type = 'checkbox' onclick="darkmodeFunction();" id="darkmode">
+                            <input type = 'checkbox' onclick="darkmodeFunction()" id="darkmode">
                             <span class = 'slider'></span>
                         </label>
                         </a>
@@ -56,7 +57,27 @@
                 </li>
             </div>
         </div>
+        <label id="burger-button" onclick="burgerFunction();">
+            <div class="line"></div>
+            <div class="empty"></div>
+            <div class="line"></div>
+            <div class="empty"></div>
+            <div class="line"></div>
+        </label>
+        <div class="burger-menu" id="burger-menu">
+            <a href="peter/guide/guide.html">
+                Bæredygtig Guide
 
+            </a><a href="OmOs.html">
+                OmOs
+
+            </a><a href="#">
+                Reviews
+
+            </a><a href="#">
+                Kontakt
+            </a>
+        </div>
     </nav>
 </header>
 
@@ -74,8 +95,8 @@
     </header>
 
 <div class="section1">
-     <img class="cloud"  src="img/cloud og sol.png" id="cloud1">
-  <img class="bikappe2" src="img/Bi med kappe1.png">
+     <img class="cloud"  src="img/cloud og sol.png" id="cloud1" alt="skyer">
+  <img class="bikappe2" src="img/Bi med kappe1.png" alt="bi med kappe">
   
  </div>
 
@@ -93,8 +114,8 @@
  </ul>
 
 <div class="section2">
-    <img class="cloud1" src="img/cloud 2.png" id="cloud2">
-    <img class="bikappe" src="img/Bi med kappe2.png">
+    <img class="cloud1" src="img/cloud 2.png" id="cloud2" alt="skyer">
+    <img class="bikappe" src="img/Bi med kappe2.png" alt="bi med kappe">
 </div>
 
 <h1 class="head2">Hvorfor er vi bæredygtige?:</h1>
@@ -128,8 +149,8 @@
 
 <div class="section3">
    
-     <img class="cloud" src="img/cloud 3.png" id="cloud3">
-      <img class="bikappe3" src="img/Bi med kappe3.png">
+     <img class="cloud" src="img/cloud 3.png" id="cloud3" alt="Skyer">
+      <img class="bikappe3" src="img/Bi med kappe3.png" alt="bi med kappe">
 </div>
 
 <h1 class="head3">Kendetegn og styrker:</h1>

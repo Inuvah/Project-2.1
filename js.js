@@ -64,7 +64,19 @@ function burgerFunction(){
 }
 window.onclick = function(event) {
   if (!event.target.matches('.input-button')) {
-    var dropdowns = document.getElementsByClassName("dropdown-one");
+    var dropdowns = document.getElementsByClassName("dropdown-link");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.burger-button')) {
+    var dropdowns = document.getElementsByClassName("burger-menu");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];

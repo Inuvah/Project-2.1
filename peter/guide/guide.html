@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BÆREDYGTIGHED</title>
+    <link rel="icon" type="image/x-icon" href="../../img/Bi med kappe.png">
+    <title>SOP Man - BÆREDYGTIGHED</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../styles.css">
 
@@ -20,7 +21,7 @@
                 </a>
             </div>
 
-            <div class="navigation">
+            <div class="navigation" id="desktop-nav">
                 <a href="peter/guide/guide.html">
                     Bæredygtig Guide
 
@@ -37,7 +38,7 @@
 
             <div class="access">
                 <input type="button" value="Webtilgængelighed" id="dropdownButton" class="input-button"
-                    onclick="dropFunctionOne();">
+                    onclick="dropFunctionOne()">
                 <div class="dropdown-one dropdown-link" id="dropdown">
                     <li>
                         <div class="slider-container">
@@ -46,17 +47,37 @@
                         </div>
                     </li>
                     <li>
-                        <div class='toggle-switch'>
+                        <div class = 'toggle-switch'>
                             <label>
-                                <input type='checkbox' onclick="darkmodeFunction();" id="darkmode">
-                                <span class='slider'></span>
+                                <input type = 'checkbox' onclick="darkmodeFunction()" id="darkmode">
+                                <span class = 'slider'></span>
                             </label>
                             </a>
                         </div>
                     </li>
                 </div>
             </div>
+            <label id="burger-button" onclick="burgerFunction();">
+                <div class="line"></div>
+                <div class="empty"></div>
+                <div class="line"></div>
+                <div class="empty"></div>
+                <div class="line"></div>
+            </label>
+            <div class="burger-menu" id="burger-menu">
+                <a href="peter/guide/guide.html">
+                    Bæredygtig Guide
 
+                </a><a href="../../OmOs.html">
+                    OmOs
+
+                </a><a href="#">
+                    Reviews
+
+                </a><a href="#">
+                    Kontakt
+                </a>
+            </div>
         </nav>
     </header>
 
@@ -301,7 +322,7 @@
 
         </div>
     </div>
-    <script src="js.js"></script>
+    <script src="../../js.js"></script>
 </body>
 
 </html>

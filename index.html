@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/Bi med kappe.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>SOP Man</title>
 </head>
-
+<!--
+    TIL LÆRER DARKMODE VIRKER KUN PÅ FORSIDEN SAMME MED 
+    TEKST SLIDER
+-->
 <body id="body">
     <header>
         <nav>
@@ -56,7 +60,7 @@
                     </li>
                 </div>
             </div>
-            <label id="burger-button" onclick="burgerFunction();">
+            <label id="burger-button" class="burger-button" onclick="burgerFunction();">
                 <div class="line"></div>
                 <div class="empty"></div>
                 <div class="line"></div>
@@ -109,6 +113,12 @@
         </div>
         <div class="håndtekst1">
             <h3>HVOR MEGET SVINER HJEMMESIDER?</h3>
+            <p>Hjemme sider sender og modtager konstant data,
+                for kunne sende og modtage dataen kræves strøm. 
+                Så er der den strøm som brugeren der besøger siden bruger også,
+                jo mere siden kræver af brugerens internet og hardware jo mere 
+                strøm sluges.
+            </p>
         </div>
 
         <button class="CO2" id="CO2" onclick="CO2BubbleFunction()">
@@ -121,6 +131,9 @@
         </div>
         <div class="håndtekst2">
             <h3>HVILKE ÆNDRINGER SKER?</h3>
+            <p>Internettet er ikke en af de faktorer man tænker på inden for forurening,
+                men internettet forurener lige så meget som kormercielle flyve maskiner.
+            </p>
         </div>
 
     </section>
@@ -143,22 +156,6 @@
     <script src="js.js"></script>
 
 <footer>
-    <!--
-<nav class="honeyComb">
-    
-    <img src="img/Asset 100.svg" alt="">
-    <div class="top-hex">
-        <div class="honeyComb-hex"><a href=""><p>Mail</p></a></div>
-        <div class="honeyComb-hex"><a href=""><p>Tel</p></a></div>
-    </div>
-    <div class="honeyComb-hex"><a href=""><p>Cvr</p></a></div>
-    <div class="honeyComb-hex"><a href=""><p>Insta</p></a></div>
-    <div class="honeyComb-hex"><a href=""><p>Face</p></a></div>
-    <div class="bottom-hex">
-        <div class="honeyComb-hex"><a href=""><p>ehh</p></a></div>
-        <div class="honeyComb-hex"><a href=""><p>Bzzzh</p></a></div> 
-    </div>
--->
     <div class="foot-content-container">
         <div class="foot-content">
             <ul>
@@ -180,9 +177,6 @@
             </ul>
         </div>
     </div>
-    <!--
-      </nav>  
-    -->
 </footer>
 </body>
 </html>
