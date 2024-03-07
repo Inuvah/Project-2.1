@@ -2,27 +2,21 @@
 var citylight = 600;
 var click = 0;
 var starcontainer = document.getElementById("star-container");
-
 //Text size slider
 const fontSizeSlider = document.getElementById("font-size-slider");
 const displayText = document.getElementById("display-text");
-
 fontSizeSlider.addEventListener("input", () => {
   const fontSize = fontSizeSlider.value;
   displayText.style.fontSize = `${fontSize}px`;
 });
-
 //nav accesibility drop down
 function dropFunctionOne() {
     document.getElementById("dropdown").classList.toggle("show");
 }
-
 //Computer animation onClick
 function fullScreen(){
   document.getElementById("fullScreen").classList.toggle("fullScreenAnim");
 }
-
-
 //Darkmode button && generate stars
 function darkmodeFunction() {
   click++;
@@ -47,7 +41,6 @@ function darkmodeFunction() {
       starTwo.style.top = Math.floor(Math.random(2)*2900) + "px";
       starTwo.style.right = Math.floor(Math.random(2)*2900) + "px";
       starcontainer.appendChild(starTwo);
-      
     } 
   }else if(click == 2){
     for(var i = 0;i < citylight;i++){
@@ -59,33 +52,28 @@ function darkmodeFunction() {
     click = 0;
   }
 }
-
 //Info Grow
 function CO2BubbleFunction() {
     document.getElementById("CO2-secondP").classList.toggle("show");
     document.getElementById("CO2-firstP").classList.toggle("show");
 }
-
 //Burger Menu
 function burgerFunction(){
   document.getElementById("burger-menu").classList.toggle("show");
   console.log("I have been clicked");
 }
-
 window.onclick = function(event) {
-    if (!event.target.matches('.input-button')) {
-      var dropdowns = document.getElementsByClassName("dropdown-one");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+  if (!event.target.matches('.input-button')) {
+    var dropdowns = document.getElementsByClassName("dropdown-one");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
+  }
 }
-
-
 window.addEventListener('scroll', () => {
   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
