@@ -2,29 +2,19 @@ body {
     padding:0;
     margin:0;
     background-color: #2D79D2;
-    overflow-x: hidden;
-}
-
+    overflow-x: hidden;}
 /*RESPONSIVE*/
 @media screen and (min-width: 80rem) {
     .container {
-        margin: 1em 2em;
-    }
-}
-/*-----------------------------*/
-
+        margin: 1em 2em;}}
 /*LOGO*/
 .logo {
     width: 25%;
     display: inline-flex;
-    align-items: center;
-}
-
+    align-items: center;}
 .logo img {
     width: 100%;
-    margin-left: 5%;
-}
-
+    margin-left: 5%;}
 #headline {
     display: flex;
     flex-direction: column;
@@ -33,9 +23,7 @@ body {
     font-family: monospace;
     color: white;
     display: table;
-    margin: 0 10% 0 10%;
-}
-
+    margin: 0 10% 0 10%;}
 ul li, p {
     padding: 0 2% 0 2%;
     color: black;
@@ -43,84 +31,57 @@ ul li, p {
     height: 100%;
     font-size: x-large;
     line-height: 190%;
-    list-style-type: none;
-}
-
+    list-style-type: none;}
 ul li {
     text-align: left;
-    width: 80%;
-}
+    width: 80%;}
 h1, h2, h3, h4, h5, h6 {
-    padding-bottom: 3rem;
-}
-
+    padding-bottom: 3rem;}
 .section1, .section2, .section3 {
     display: inline-flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: auto;
-}
-
+    margin: auto;}
 .section1, .section3 {
     display: flex;
-    justify-content: end;
-}
-
+    justify-content: end;}
 .cloud {
     max-width: 100%;
     max-height: 100%;
-    float: right;
-}
-
+    float: right;}
 #cloud2 {
     max-width: 100%;
     max-height: 100%;
     animation: floatIn 0.4s linear;
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-}
-
+    animation-delay: calc(var(--scroll) * -1s);}
 #cloud3 {
     animation: floatIn2 1s linear;
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-}
-
+    animation-delay: calc(var(--scroll) * -1s);}
 @keyframes floatIn {
     0%{transform: translateX(-200%);}
-    100%{transform: translateX(0 px);}
-}
+    100%{transform: translateX(0 px);}}
 @keyframes floatIn2 {
     0%{transform: translateX(200%);}
-    100%{transform: translateX(0 px);}
-}
-
+    100%{transform: translateX(0 px);}}
 .bikappe {
     height: 100px;
     float: left;
-    margin: 0 0 0 50%; 
-}
-
+    margin: 0 0 0 50%; }
 .bikappe2  {
     height: 100px;
     float: left;
-    margin: 0 50% 0 0; 
-}
-
-
+    margin: 0 50% 0 0; }
 .bikappe3  {
     height: 100px;
     float: left;
-    margin: 0 50% 0 0; 
-}
-
+    margin: 0 50% 0 0; }
 .text1 {
     font-family: monospace;
     font-weight: bolder;
     width: 100%;
-    float: right;
-}
-
+    float: right;}
 .head1 {
     font-family: monospace;
     font-weight: bolder;
@@ -129,9 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
     padding-left: 10px;
     margin-left: 10px;
-    left: 10px;
-  }
-
+    left: 10px;}
 .head2 {
     max-width: 100%;
     font-family: monospace;
@@ -141,26 +100,19 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
     padding-right: 10px;
     margin-right: 10px;
-    right: 10px;
-
-}
+    right: 10px;}
 .textRight {
     display: flex;
-    flex-direction: row;
-}
-
+    flex-direction: row;}
 .spacer {
     display: block;
     width: 50%;
-    height: 100px;
-}
+    height: 100px;}
 .text2 {
     font-family: monospace;
     font-weight: bolder;
     text-align: right;
-    max-width: 100%;
-}
-
+    max-width: 100%;}
 .head3 {
     font-family: monospace;
     font-weight: bolder;
@@ -168,14 +120,11 @@ h1, h2, h3, h4, h5, h6 {
     text-align:left;
     text-decoration: underline;
     padding-left: 10px;
-    margin:0 20% 0 10px;
-}
-
+    margin:0 20% 0 10px;}
 .text3{
     font-family: monospace;
     font-weight: bolder;
     width: 80%;
     padding-left: 10px;
     margin-left: 10px;
-    left: 10px;
-}
+    left: 10px;}
